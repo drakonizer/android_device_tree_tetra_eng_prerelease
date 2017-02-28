@@ -18,7 +18,7 @@ TARGET_KERNEL_CONFIG := tetra_defconfig
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/tetra/device.mk)
-$(call inherit-product, kernel/tetra/common/AndroidKernel.mk)
+$(call inherit-product, kernel/tetra//AndroidKernel.mk)
 $(call inherit-product, vendor/sony/tetra/tetra-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_tiny.mk)
